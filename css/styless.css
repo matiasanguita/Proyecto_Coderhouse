@@ -1,0 +1,109 @@
+/* Selector de etiqueta */
+/* Esta es la font descargada e ingresada */
+html
+{
+    font-family: "Happiness";
+    font-weight: lighter;
+    font-size:larger;
+    text-align: justify;
+    background-color: rgba(49, 165, 146, 0.589);
+}
+
+html 
+{font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+@font-face {
+    font-family: Happiness ;
+    src: url(./../assets/fonts/Super\ Happy\ Personal\ Use.ttf);
+    font-weight: 400;
+    
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+column-gap: 10px;
+
+}
+.logo {
+    display: flex;
+    border-radius: 100%;
+    height: 100px;
+}
+
+.redes_sociales {
+    color:rgb(255, 255, 255) (25, 0, 255);
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+    background-color:  rgb(91, 129, 87);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: normal;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    padding: 20px;
+
+}
+
+
+.al_fondo {
+    background-color: rgb(91, 129, 87);
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.cards_inicio {
+    height: 300px;
+    width:400px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.profesion {
+    font-size: 30px;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    list-style: none;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: rgb(25, 138, 72);
+    
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1{
+    color: #ffffff;
+}
+
+h2 {   
+    color: #ffffff;
+}
+p {
+    color: #ffffff;
+}
