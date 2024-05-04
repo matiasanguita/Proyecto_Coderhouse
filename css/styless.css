@@ -108,10 +108,13 @@ column-gap: 10px;
 /* Main */
 
 
+
+
 .cards_inicio {
 display: grid;
 height: auto;
 width: 300px;
+border-radius: 25% 10% 25% 10%;
 
 }
 
@@ -126,9 +129,11 @@ width: 300px;
 
 .cards {
     display: grid;
-width: 100px;
-
+    width: 100px;
+    text-align: center;
 }
+
+
 
 
 
@@ -136,11 +141,13 @@ width: 100px;
 
 .footer {
     background-color:rgb(169, 153, 133);
-    padding: 20px 0;
+    display: flex;
+    padding: 20px;
     text-align: center;
+    justify-content: center;
 }
 
-.contenedor {
+.contenedor-footer {
     max-width: 1200px;
     margin: 5 auto;
     display: grid;
@@ -164,7 +171,7 @@ width: 100px;
 }
 
 .footer-social ul li:last-child {
-    margin-right: 0;
+    margin-right: 5;
 }
 
 .footer-social ul li a {
@@ -188,6 +195,12 @@ width: 100px;
     .profesion {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .footer-social ul li {
+        display: flex;
+        flex-direction: column;
+    
+    }
 }
 
 /* Estilos para tamaños medianos (medium size) */
@@ -195,6 +208,12 @@ width: 100px;
 
     .profesion {
         grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer-social ul li {
+        display: flex;
+        flex-direction: column;
+    
     }
 }
 
