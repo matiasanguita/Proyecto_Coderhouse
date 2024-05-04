@@ -204,6 +204,7 @@ border-radius: 25% 10% 25% 10%;
 }
 
 /* Estilos para tamaños medianos (medium size) */
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
     .profesion {
@@ -211,15 +212,13 @@ border-radius: 25% 10% 25% 10%;
     }
 
     .footer-social ul li {
-        display: flex;
-        flex-direction: column;
-    
+    display: flex;
+    flex-direction: column;
     }
 }
 
 /* Estilos para tamaños medianos (medium size) */
-@media screen (max-width: 1024px) {
-
+@media screen and (max-width: 1024px) {
     .profesion {
         grid-template-columns: repeat(3, 1fr); 
     }
