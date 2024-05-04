@@ -6,16 +6,12 @@ html
     font-weight: lighter;
     font-size:larger;
     text-align: justify;
-    background-color: rgba(49, 165, 146, 0.589);
+    background-color:rgb(245, 241, 237);
 }
 
 html 
 {font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
-
-
 
 @font-face {
     font-family: Happiness ;
@@ -23,8 +19,79 @@ html
     font-weight: 400;
     
 }
-
+/* Paleta de colores
+rgb(37, 35, 35)
+rgb(112, 121, 140)
+rgb(245, 241, 237)
+rgb(218, 210, 188)
+rgb(169, 153, 133) */
 .header {
+    background-color: rgb(37, 35, 35);
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.submenu-items {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+}
+
+.submenu:hover .submenu-items {
+    display: block;
+}
+
+.submenu-items li {
+    margin: 5px 0;
+}
+
+.logo {
+    margin-right: 20px;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header nav li {
+    background-color:rgb(112, 121, 140);
+    padding: 3px;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: rgb(245, 241, 237);
+    text-decoration: none;
+}
+
+.header ul li a:hover {
+    color:rgb(37, 35, 35);
+    background-color: rgb(245, 241, 237) ;
+    padding: 3px;
+}
+
+/* .header {
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -35,75 +102,106 @@ column-gap: 10px;
     display: flex;
     border-radius: 100%;
     height: 100px;
-}
-
-.redes_sociales {
-    color:rgb(255, 255, 255) (25, 0, 255);
-    text-decoration: none;
-    text-transform: capitalize;
-    list-style-type: none;
-    text-decoration: none;
-    background-color:  rgb(91, 129, 87);
-    height: 150px;
-    width: 100%;
-    display: flex;
-    align-items: normal;
-    justify-content: space-evenly;
-    column-gap: 10px;
-    padding: 20px;
-
-}
+} */
 
 
-.al_fondo {
-    background-color: rgb(91, 129, 87);
-    width: 100%;
-    height: 180px;
-    position: absolute;
-    z-index: -1;
-}
+/* Main */
 
 
 .cards_inicio {
-    height: 300px;
-    width:400px;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
+display: grid;
+height: auto;
+width: 300px;
+
 }
 
 .profesion {
-    font-size: 30px;
-}
-
-header nav ul li a{
-    color: #ffffff;
-    font-size: 20px;
-    list-style: none;
-
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    column-gap: 10px;
-    background-color: rgb(25, 138, 72);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
     
 }
 
-a {
+.cards {
+    display: grid;
+width: 100px;
+
+}
+
+
+
+/* Footer */
+
+.footer {
+    background-color:rgb(169, 153, 133);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 5 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+
+
+.footer-social ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social ul li {
+    display: inline-block;
+
+}
+
+.footer-social ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-social ul li a {
+    color: #333;
     text-decoration: none;
-    color: #ffffff;
 }
 
-h1{
-    color: #ffffff;
+/* Creo que seria mucho agregar tanto click para contacto y hubicacion */
+/* .footer-info h3:hover {
+    color: #007bff;
+} */
+
+.footer-social ul li a:hover {
+    color: #007bff;
 }
 
-h2 {   
-    color: #ffffff;
+/* Arriba Footer */
+/* Media Quaries */
+/* Estilos para tamaños pequeños (small size) */
+@media screen and (max-width: 768px) {
+    .profesion {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-p {
-    color: #ffffff;
+
+/* Estilos para tamaños medianos (medium size) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .profesion {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Estilos para tamaños medianos (medium size) */
+@media screen (max-width: 1024px) {
+
+    .profesion {
+        grid-template-columns: repeat(3, 1fr); 
+    }
 }
