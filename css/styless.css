@@ -25,6 +25,7 @@ rgb(112, 121, 140)
 rgb(245, 241, 237)
 rgb(218, 210, 188)
 rgb(169, 153, 133) */
+
 .header {
     background-color: rgb(37, 35, 35);
     color: white;
@@ -188,6 +189,35 @@ column-gap: 10px;
     color: #007bff;
 }
 
+
+
+
+
+
+/* Medicina */
+
+.medicina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medicina img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Arriba Footer */
 /* Media Quaries */
 /* Estilos para tamaños pequeños (small size) */
@@ -217,9 +247,9 @@ column-gap: 10px;
     }
 }
 
-/* Estilos para tamaños medianos (medium size) */
+/* Estilos para tamaños medianos (medium size)
 @media screen and (max-width: 1024px) {
     .profesion {
         grid-template-columns: repeat(3, 1fr); 
     }
-}
+} */
