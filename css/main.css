@@ -1,0 +1,79 @@
+html {
+  font-family: "Happiness";
+  font-weight: lighter;
+  font-size: larger;
+  text-align: justify;
+  background-color: rgb(245, 241, 237);
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: Happiness;
+  src: url(./../assets/fonts/Super\ Happy\ Personal\ Use.ttf);
+  font-weight: 400;
+}
+/* Paleta de colores
+rgb(37, 35, 35)
+rgb(112, 121, 140)
+rgb(245, 241, 237)
+rgb(218, 210, 188)
+rgb(169, 153, 133) */
+header .header-container .header {
+  background-color: rgb(37, 35, 35);
+  color: white;
+  padding: 10px 0;
+}
+header .header-container .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-container .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header .header-container .menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header .header-container .submenu-items {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+}
+header .header-container .submenu:hover .submenu-items {
+  display: block;
+}
+header .header-container .submenu-items li {
+  margin: 5px 0;
+}
+header .header-container .logo {
+  margin-right: 20px;
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+header .header-container header nav li {
+  background-color: rgb(112, 121, 140);
+  padding: 3px;
+  text-decoration: none;
+}
+header .header-container header nav ul li a {
+  color: rgb(245, 241, 237);
+  text-decoration: none;
+}
+header .header-container .header ul li a:hover {
+  color: rgb(37, 35, 35);
+  background-color: rgb(245, 241, 237);
+  padding: 3px;
+}
+
+/*# sourceMappingURL=main.css.map */
