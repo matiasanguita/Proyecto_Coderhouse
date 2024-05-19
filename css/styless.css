@@ -1,6 +1,6 @@
 /* Selector de etiqueta */
 /* Esta es la font descargada e ingresada */
-html
+/* html
 {
     font-family: "Happiness";
     font-weight: lighter;
@@ -11,21 +11,20 @@ html
 
 html 
 {font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} 
 
 @font-face {
     font-family: Happiness ;
     src: url(./../assets/fonts/Super\ Happy\ Personal\ Use.ttf);
     font-weight: 400;
     
-}
+} */
 /* Paleta de colores
 rgb(37, 35, 35)
 rgb(112, 121, 140)
 rgb(245, 241, 237)
 rgb(218, 210, 188)
 rgb(169, 153, 133) */
-
 .header {
     background-color: rgb(37, 35, 35);
     color: white;
@@ -73,7 +72,7 @@ rgb(169, 153, 133) */
     max-width: 100px;
     height: auto;
     border-radius: 50%;
-}
+} 
 
 header nav li {
     background-color:rgb(112, 121, 140);
@@ -84,15 +83,16 @@ header nav li {
 header nav ul li a {
     color: rgb(245, 241, 237);
     text-decoration: none;
-}
+} 
 
-.header ul li a:hover {
+header ul li a:hover {
     color:rgb(37, 35, 35);
     background-color: rgb(245, 241, 237) ;
     padding: 3px;
-}
 
-.header {
+} 
+
+ .header {
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -103,7 +103,7 @@ column-gap: 10px;
     display: flex;
     border-radius: 100%;
     height: 100px;
-}
+} */
 
 
 /* Main */
@@ -111,6 +111,13 @@ column-gap: 10px;
 
 
 
+.cards_inicio {
+display: grid;
+height: auto;
+width: 300px;
+border-radius: 25% 10% 25% 10%;
+
+}
 
 .profesion {
     display: grid;
@@ -125,16 +132,9 @@ column-gap: 10px;
     display: grid;
     width: 100px;
     text-align: center;
-}
+} 
 
 
-.cards_inicio {
-    display: grid;
-    height: auto;
-    width: 300px;
-    border-radius: 25% 10% 25% 10%;
-    
-    }
 
 
 
@@ -181,43 +181,13 @@ column-gap: 10px;
 }
 
 /* Creo que seria mucho agregar tanto click para contacto y hubicacion */
-/* .footer-info h3:hover {
+.footer-info h3:hover {
     color: #007bff;
-} */
+} 
 
 .footer-social ul li a:hover {
     color: #007bff;
-}
-
-
-
-
-
-
-/* Medicina */
-
-.medicina {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.medicina img {
-    max-width: 500px;
-    max-height: 500px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+} 
 /* Arriba Footer */
 /* Media Quaries */
 /* Estilos para tamaños pequeños (small size) */
@@ -225,6 +195,7 @@ column-gap: 10px;
     .profesion {
         grid-template-columns: repeat(1, 1fr);
     }
+
 
     .footer-social ul li {
         display: flex;
@@ -247,9 +218,9 @@ column-gap: 10px;
     }
 }
 
-/* Estilos para tamaños medianos (medium size)
+/* Estilos para tamaños medianos (medium size) */
 @media screen and (max-width: 1024px) {
     .profesion {
         grid-template-columns: repeat(3, 1fr); 
     }
-} */
+}
