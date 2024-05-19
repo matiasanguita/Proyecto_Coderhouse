@@ -1,0 +1,155 @@
+html {
+  font-family: "Happiness";
+  font-weight: lighter;
+  font-size: larger;
+  text-align: justify;
+  background-color: rgb(245, 241, 237);
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: Happiness;
+  src: url(./../assets/fonts/Super\ Happy\ Personal\ Use.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Happiness";
+  src: url(./../assets/fonts/Super\ Happy\ Personal\ Use.ttf);
+  font-weight: 400;
+}
+html {
+  font-family: "Happiness", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  text-align: justify;
+  background-color: rgb(245, 241, 237);
+}
+
+.header {
+  background-color: rgb(37, 35, 35);
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+.header .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-container .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header .header-container .menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+  background-color: rgb(112, 121, 140);
+  padding: 3px;
+  text-decoration: none;
+}
+.header .header-container .menu ul li a {
+  color: rgb(245, 241, 237);
+  text-decoration: none;
+}
+.header .header-container .menu ul li a:hover {
+  color: rgb(37, 35, 35);
+  background-color: rgb(245, 241, 237);
+  padding: 3px;
+}
+.header .header-container .menu ul li.submenu {
+  position: relative;
+}
+.header .header-container .menu ul li.submenu:hover .submenu-items {
+  display: block;
+}
+.header .header-container .menu ul li.submenu .submenu-items {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+}
+.header .header-container .menu ul li.submenu .submenu-items li {
+  margin: 5px 0;
+}
+.header .header-container .menu ul li.submenu .submenu-items li a {
+  color: rgb(245, 241, 237);
+}
+.header .header-container .menu ul li.submenu .submenu-items li a:hover {
+  color: #007bff;
+}
+.header .header-container .logo {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.cards_inicio {
+  display: grid;
+  height: auto;
+  width: 300px;
+  border-radius: 25% 10% 25% 10%;
+}
+
+.profesion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  width: 100px;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(169, 153, 133);
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.footer .contenedor-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .contenedor-footer .footer-social ul {
+  padding: 0;
+  list-style: none;
+}
+.footer .contenedor-footer .footer-social ul li {
+  display: inline-block;
+}
+.footer .contenedor-footer .footer-social ul li:last-child {
+  margin-right: 0;
+}
+.footer .contenedor-footer .footer-social ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.footer .contenedor-footer .footer-social ul li a:hover {
+  color: #007bff;
+}
+
+/*# sourceMappingURL=main.css.map */

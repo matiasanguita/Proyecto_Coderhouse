@@ -2,7 +2,11 @@
 
 @import "./components/header";
 
+@import "./components/footer";
 
+
+
+@import "./pages/index";
 
 
 
@@ -10,4 +14,4 @@
 
 // al final van las media queries
 
-@import "./utilities/media-queries"
+@import "./utilities/media-queries";
