@@ -1,0 +1,43 @@
+footer
+{
+    background-color:rgb(169, 153, 133);
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+
+    .contenedor-footer 
+    {
+        max-width: 1200px;
+        margin: 5 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: flex-end;
+        align-items: center;
+        .footer-info 
+        {
+        }
+        .footer-social 
+        {
+            ul 
+            {
+                padding: 0;
+                list-style: none;
+                
+                li 
+                {
+                    display: inline-block;
+                    a 
+                    {
+                        color: #333;
+                        text-decoration: none;
+                    }
+                    &:last-child 
+                    {
+                        margin-right: 5;
+                    }
+                }
+            }
+        }
+    }
+}

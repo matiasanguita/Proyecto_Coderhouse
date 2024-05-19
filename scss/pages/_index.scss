@@ -1,0 +1,33 @@
+
+main
+{
+
+
+.profesion
+{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .cards
+        {
+            display: grid;
+            width: 100px;
+            text-align: center;
+            h2
+            {
+            color: deepskyblue;
+            }
+            .cards_inicio
+            {   
+                display: grid;
+                height: auto;
+                width: 300px;
+                border-radius: 25% 10% 25% 10%;         
+            }
+
+        }
+    }
+}
