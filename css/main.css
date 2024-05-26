@@ -138,69 +138,28 @@ main .profesion .cards .cards_inicio {
   border-radius: 25% 10% 25% 10%;
 }
 
-.footer {
-  background-color: rgb(169, 153, 133);
-  display: flex;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-}
-.footer .contenedor-footer {
-  max-width: 1200px;
-  margin: 5px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: flex-end;
-  align-items: center;
-}
-.footer .contenedor-footer .footer-info h3 {
-  margin-bottom: 10px;
-}
-.footer .contenedor-footer .footer-info p {
-  margin: 5px 0;
-}
-.footer .contenedor-footer .footer-social h3 {
-  margin-bottom: 10px;
-}
-.footer .contenedor-footer .footer-social ul {
-  padding: 0;
-  list-style: none;
-}
-.footer .contenedor-footer .footer-social ul li {
-  display: inline-block;
-}
-.footer .contenedor-footer .footer-social ul li a {
-  color: #333;
-  text-decoration: none;
-}
-.footer .contenedor-footer .footer-social ul li a:hover {
-  color: #007bff;
-}
-.footer .contenedor-footer .footer-social ul li:last-child {
-  margin-right: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  .profesion {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .footer-social ul li {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 1025px) {
+  main .profesion {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .profesion {
+  main .profesion {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer-social ul li {
-    display: flex;
+    display: grid;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1024px) {
-  .profesion {
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 768px) {
+  main .profesion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-social ul li {
+    display: grid;
+    flex-direction: column;
   }
 }
 
