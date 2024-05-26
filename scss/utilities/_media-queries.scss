@@ -40,6 +40,20 @@
     display: grid;
     flex-direction: column;
     }
+    #kinesiologia
+    {
+        .fotos_kines
+        {
+            .card_cami
+            {
+                flex-direction: column;
+            }
+            .card_maira
+            {
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 

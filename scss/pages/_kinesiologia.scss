@@ -1,0 +1,60 @@
+#kinesiologia   
+{
+    h1 
+    {
+        align-items: center;
+        justify-content: center;
+    }
+    .fotos_kines
+    {
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 10px;
+        .card_cami
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid aqua;
+            margin: 5px;
+            .foto_cami
+            {
+                align-items: center;
+                justify-content: center;
+                border-radius: 25% 10%;
+                height: 200px;
+                width: 200px;
+                padding: 5px;
+            }
+            p
+            {
+                padding: 5px;
+                width: 300px;
+            }
+        }
+        .card_maira
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            border: 2px solid aqua;
+            margin: 5px;
+            .foto_maira 
+            {
+                
+                border-radius: 25% 10%;
+                height: 200px;
+                width: 200px;
+                padding: 5px;
+            }
+            p
+            {
+                padding: 10px;
+                width: 20rem;
+            }
+        }
+    }
+}
