@@ -177,9 +177,22 @@ main .formulario {
   width: 20rem;
 }
 
-.medicina_carrusel img {
-  height: 300px;
-  width: 300px;
+.medicina_carrusel .imagen-container {
+  max-height: 600px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.medicina_carrusel .carousel-control-prev {
+  background-color: rgb(37, 35, 35);
+}
+.medicina_carrusel .carousel-control-prev .carousel-control-prev-icon {
+  background-color: rgb(37, 35, 35);
+}
+.medicina_carrusel .carousel-control-next {
+  background-color: rgb(37, 35, 35);
+}
+.medicina_carrusel .carousel-control-next .carousel-control-next-icon {
+  background-color: rgb(37, 35, 35);
 }
 
 main .profesion {
