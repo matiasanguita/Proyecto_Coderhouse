@@ -1,8 +1,19 @@
-.medicina_carrusel
+main 
 {
-    img
+    .carrusel 
     {
-        height: 300px;
-        width: 300px;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    
+        .imagen {
+            flex: 0 0 100%;
+            transition: transform 0.5s ease;
+    
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }
