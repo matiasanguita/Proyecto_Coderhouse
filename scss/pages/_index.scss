@@ -8,24 +8,33 @@ main
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
+        column-gap: 15px;
         justify-content: center;
         align-items: center;
 
         .cards
         {
-            display: grid;
-            width: 100px;
-            text-align: center;
-            h2
+            justify-content: center;
+            align-items: center;
+            .mini_titulos
             {
-            color: deepskyblue;
+            color: rgb(43, 150, 158);
             }
             .cards_inicio
             {   
+                justify-content: center;
+                align-items: center;
                 display: grid;
                 height: auto;
                 width: 300px;
                 border-radius: 25% 10% 25% 10%;         
+            }
+            h3 
+            {
+                padding: 10px;
+                column-gap: 15px;
+                font-weight: normal;
+                
             }
 
         }

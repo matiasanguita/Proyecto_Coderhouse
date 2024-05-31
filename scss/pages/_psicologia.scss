@@ -1,0 +1,25 @@
+.titulo_psicologia
+{
+    color: deepskyblue;
+}
+
+.psicologa_laura 
+{
+    display: flex;
+    flex-direction: row;
+    img 
+    {
+        align-items: center;
+        justify-content: center;
+        border-radius: 25% 10%;
+        height: 200px;
+        width: 200px;
+        padding: 2px;
+        border-radius: 25% 10% 25% 10%;   
+    }
+    h2 
+    {
+        padding: 10px;
+        font-weight: normal;
+    }
+}
