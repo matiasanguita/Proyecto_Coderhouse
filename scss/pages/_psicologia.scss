@@ -1,25 +1,22 @@
-.titulo_psicologia
-{
-    color: deepskyblue;
+.titulo_psicologia {
+    color: rgb(43, 150, 158);
 }
 
-.psicologa_laura 
-{
+.psicologa_laura {
     display: flex;
-    flex-direction: row;
-    img 
-    {
-        align-items: center;
-        justify-content: center;
-        border-radius: 25% 10%;
-        height: 200px;
-        width: 200px;
-        padding: 2px;
-        border-radius: 25% 10% 25% 10%;   
+    align-items: center; 
+    text-align: center; 
+
+    img {
+        border-radius: 30%; 
+        max-width: 200px; 
+        height: auto; 
+        margin-right: 20px; 
     }
-    h2 
-    {
+
+    h2 {
         padding: 10px;
         font-weight: normal;
+        font-size: 1rem;
     }
 }

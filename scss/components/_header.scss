@@ -4,94 +4,83 @@ rgb(112, 121, 140)
 rgb(245, 241, 237)
 rgb(218, 210, 188)
 rgb(169, 153, 133) */
-
-header
-{
-
-    background-color: rgba(0, 255, 242, 0.459);
+.header {
+    background-color: rgb(169, 153, 133);
     color: white;
     padding: 10px 0;
-    
-    .header-container 
-    {
+
+    .header-container {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        
 
-        .menu 
-        {
-            ul 
-            {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                text-align: center;              
-                li 
-                {
-                    display: inline-block;
-                    margin-right: 20px;
-                    padding: 3px;
-                    text-decoration: none; 
-                    a
-                    {
-                        color: rgba(0, 0, 0, 0.425);
-                        text-decoration: none;
-                    }
-                    &:hover 
-                    {
-                        background-color: rgb(0, 255, 242);
-                        color: #ffffff;
-                        border-radius: 25%;
-                        padding: 10px;
-                    }
-                    
-                    &.submenu
-                    {
-                        padding: 10px;
-                        .submenu-items
-                        {
-                            display: none;
-                            position: absolute;
-                            background-color: #27b16c;
-                            padding: 5px;
-                            z-index: 1;
-                            li 
-                            {
-                                margin: 5px 0;
-                                a
-                                {
-                                    &:hover 
-                                    {
-                                        color:rgb(37, 35, 35);
-                                        background-color: rgb(255, 128, 0) ;
-                                        padding: 3px;
-                                    
-                                    }
-                                }
-                            }
-                            
-                        }
-                        &:hover .submenu-items
-                        {
-                            display: grid;
-                            grid-template-rows: repeat(3, 1fr);
-                            gap: 3px 3px 3px;
-                            border-radius: 10%;
-                        }
-                    }                
-                }
-            }
-        }
-        .logo 
-        {
-            margin-right: 20px;
+        .logo {
             max-width: 100px;
             height: auto;
             border-radius: 50%;
+            order: 1; // Mueve el logo al final del contenedor
         }
-        
-    }   
+
+        .menu {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin: 0 10px;
+                    position: relative;
+
+                    a {
+                        color: rgba(0, 0, 0, 0.7);
+                        text-decoration: none;
+                        padding: 10px;
+                        display: block;
+
+                        &:hover {
+                            background-color: rgb(112, 102, 89);
+                            color: #ffffff;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    &.submenu {
+                        .submenu-items {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: rgb(169, 153, 133);
+                            padding: 10px;
+                            border-radius: 5px;
+                            z-index: 1;
+
+                            li {
+                                margin: 5px 0;
+
+                                a {
+                                    color: #ffffff;
+                                    padding: 5px;
+
+                                    &:hover {
+                                        color: rgb(37, 35, 35);
+                                        background-color: rgba(255, 255, 255, 0.2);
+                                        border-radius: 3px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover .submenu-items {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

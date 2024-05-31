@@ -9,21 +9,6 @@
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) 
-{
-    main
-    {
-        .profesion {
-        grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    .footer-social ul li {
-    display: grid;
-    flex-direction: column;
-    }
-}
-
 
 @media screen and (max-width: 768px) 
 {
@@ -54,6 +39,30 @@
             }
         }
     }
+
+.psicologa_laura {
+    flex-direction: column; 
+    justify-content: center;
+    text-align: left; 
+}
+
+.psicologa_laura img {
+    margin-right: 20px; 
+}
+.header-container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+
+    .menu {
+        margin-bottom: 10px; 
+    }
+
+    .logo {
+        order: 1; 
+        margin-top: 10px;
+    }
+}
 }
 
 

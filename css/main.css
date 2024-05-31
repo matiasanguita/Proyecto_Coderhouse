@@ -21,69 +21,70 @@ rgb(112, 121, 140)
 rgb(245, 241, 237)
 rgb(218, 210, 188)
 rgb(169, 153, 133) */
-header {
-  background-color: rgba(0, 255, 242, 0.459);
+.header {
+  background-color: rgb(169, 153, 133);
   color: white;
   padding: 10px 0;
 }
-header .header-container {
+.header .header-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-header .header-container .menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-header .header-container .menu ul li {
-  display: inline-block;
-  margin-right: 20px;
-  padding: 3px;
-  text-decoration: none;
-}
-header .header-container .menu ul li a {
-  color: rgba(0, 0, 0, 0.425);
-  text-decoration: none;
-}
-header .header-container .menu ul li:hover {
-  background-color: rgb(0, 255, 242);
-  color: #ffffff;
-  border-radius: 25%;
-  padding: 10px;
-}
-header .header-container .menu ul li.submenu {
-  padding: 10px;
-}
-header .header-container .menu ul li.submenu .submenu-items {
-  display: none;
-  position: absolute;
-  background-color: #27b16c;
-  padding: 5px;
-  z-index: 1;
-}
-header .header-container .menu ul li.submenu .submenu-items li {
-  margin: 5px 0;
-}
-header .header-container .menu ul li.submenu .submenu-items li a:hover {
-  color: rgb(37, 35, 35);
-  background-color: rgb(255, 128, 0);
-  padding: 3px;
-}
-header .header-container .menu ul li.submenu:hover .submenu-items {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 3px 3px 3px;
-  border-radius: 10%;
-}
-header .header-container .logo {
-  margin-right: 20px;
+.header .header-container .logo {
   max-width: 100px;
   height: auto;
   border-radius: 50%;
+  order: 1;
+}
+.header .header-container .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.header .header-container .menu ul li {
+  margin: 0 10px;
+  position: relative;
+}
+.header .header-container .menu ul li a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+.header .header-container .menu ul li a:hover {
+  background-color: rgb(112, 102, 89);
+  color: #ffffff;
+  border-radius: 5px;
+}
+.header .header-container .menu ul li.submenu .submenu-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(169, 153, 133);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.header .header-container .menu ul li.submenu .submenu-items li {
+  margin: 5px 0;
+}
+.header .header-container .menu ul li.submenu .submenu-items li a {
+  color: #ffffff;
+  padding: 5px;
+}
+.header .header-container .menu ul li.submenu .submenu-items li a:hover {
+  color: rgb(37, 35, 35);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+.header .header-container .menu ul li.submenu:hover .submenu-items {
+  display: block;
 }
 
 footer {
@@ -132,6 +133,7 @@ main .formulario {
 #kinesiologia h1 {
   align-items: center;
   justify-content: center;
+  color: rgb(43, 150, 158);
 }
 #kinesiologia .fotos_kines {
   display: grid;
@@ -147,6 +149,7 @@ main .formulario {
   gap: 15px;
   border: 2px solid aqua;
   margin: 5px;
+  padding: 10px;
 }
 #kinesiologia .fotos_kines .card_cami .foto_cami {
   align-items: center;
@@ -156,13 +159,6 @@ main .formulario {
   width: 200px;
   padding: 2px;
 }
-#kinesiologia .fotos_kines .card_cami h2 {
-  font-weight: normal;
-  padding: 10px;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
-}
 #kinesiologia .fotos_kines .card_maira {
   display: flex;
   flex-direction: row-reverse;
@@ -171,17 +167,13 @@ main .formulario {
   gap: 15px;
   border: 2px solid aqua;
   margin: 5px;
+  padding: 10px;
 }
 #kinesiologia .fotos_kines .card_maira .foto_maira {
   border-radius: 25% 10%;
   height: 200px;
   width: 200px;
   padding: 5px;
-}
-#kinesiologia .fotos_kines .card_maira h2 {
-  font-weight: normal;
-  padding: 10px;
-  height: 200px;
 }
 
 .medicina_carrusel .imagen-container {
@@ -203,25 +195,24 @@ main .formulario {
 }
 
 .titulo_psicologia {
-  color: deepskyblue;
+  color: rgb(43, 150, 158);
 }
 
 .psicologa_laura {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  text-align: center;
 }
 .psicologa_laura img {
-  align-items: center;
-  justify-content: center;
-  border-radius: 25% 10%;
-  height: 200px;
-  width: 200px;
-  padding: 2px;
-  border-radius: 25% 10% 25% 10%;
+  border-radius: 30%;
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
 }
 .psicologa_laura h2 {
   padding: 10px;
   font-weight: normal;
+  font-size: 1rem;
 }
 
 main .profesion {
@@ -247,7 +238,7 @@ main .profesion .cards .cards_inicio {
   width: 300px;
   border-radius: 25% 10% 25% 10%;
 }
-main .profesion .cards h3 {
+main .profesion .cards .descripciones_especialidad {
   padding: 10px;
   column-gap: 15px;
   font-weight: normal;
@@ -256,15 +247,6 @@ main .profesion .cards h3 {
 @media screen and (max-width: 1025px) {
   main .profesion {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  main .profesion {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .footer-social ul li {
-    display: grid;
-    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
@@ -281,6 +263,26 @@ main .profesion .cards h3 {
   }
   #kinesiologia .fotos_kines .card_maira {
     flex-direction: column;
+  }
+  .psicologa_laura {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  .psicologa_laura img {
+    margin-right: 20px;
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header-container .menu {
+    margin-bottom: 10px;
+  }
+  .header-container .logo {
+    order: 1;
+    margin-top: 10px;
   }
 }
 
