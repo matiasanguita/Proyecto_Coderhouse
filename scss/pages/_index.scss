@@ -1,16 +1,24 @@
 
 main
 {
-
-
-.profesion
-{
+    .neo_titulo
+    {
+        @extend .centrador_texto;
+    }
+    .servicios_index
+    {
+        display: flex;
+        @extend .centrador_texto;
+    }
+    .profesion
+    {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
         column-gap: 15px;
         justify-content: center;
         align-items: center;
+        margin: 10px;
 
         .cards
         {
@@ -18,7 +26,7 @@ main
             align-items: center;
             .mini_titulos
             {
-            color: rgb(43, 150, 158);
+            @extend .color_letras;
             }
             .cards_inicio
             {   
@@ -34,7 +42,6 @@ main
                 padding: 10px;
                 column-gap: 15px;
                 font-weight: normal;
-                
             }
 
         }

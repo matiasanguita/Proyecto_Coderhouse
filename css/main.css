@@ -15,6 +15,24 @@ html {
   src: url(./../assets/fonts/Super\ Happy\ Personal\ Use.ttf);
   font-weight: 400;
 }
+.centrador_texto, main .servicios_index, main .neo_titulo, #kinesiologia h1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.color_letras, main .profesion .cards .mini_titulos, .psicologia_main .titulo_psicologia, #kinesiologia h1 {
+  color: rgb(43, 150, 158);
+}
+
+.bordes_cards, #kinesiologia .fotos_kines .card_maira, #kinesiologia .fotos_kines .card_cami {
+  border: 2px solid rgb(112, 102, 89);
+  margin: 5px;
+  padding: 10px;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Paleta de colores
 rgb(37, 35, 35)
 rgb(112, 121, 140)
@@ -51,7 +69,7 @@ rgb(169, 153, 133) */
   position: relative;
 }
 .header .header-container .menu ul li a {
-  color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -101,6 +119,7 @@ footer .contenedor-footer {
   grid-template-columns: 1fr 1fr;
   justify-content: flex-end;
   align-items: center;
+  color: #ffffff;
 }
 footer .contenedor-footer .footer-social ul {
   padding: 0;
@@ -110,31 +129,20 @@ footer .contenedor-footer .footer-social ul li {
   display: inline-block;
 }
 footer .contenedor-footer .footer-social ul li a {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
+  margin: 3px;
 }
 footer .contenedor-footer .footer-social ul li:last-child {
   margin-right: 5;
 }
 
-main h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
+.contacto_pagina {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px;
 }
 
-#kinesiologia h1 {
-  align-items: center;
-  justify-content: center;
-  color: rgb(43, 150, 158);
-}
 #kinesiologia .fotos_kines {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -144,12 +152,6 @@ main .formulario {
 #kinesiologia .fotos_kines .card_cami {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  border: 2px solid aqua;
-  margin: 5px;
-  padding: 10px;
 }
 #kinesiologia .fotos_kines .card_cami .foto_cami {
   align-items: center;
@@ -162,18 +164,31 @@ main .formulario {
 #kinesiologia .fotos_kines .card_maira {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  border: 2px solid aqua;
-  margin: 5px;
-  padding: 10px;
 }
 #kinesiologia .fotos_kines .card_maira .foto_maira {
   border-radius: 25% 10%;
   height: 200px;
   width: 200px;
   padding: 5px;
+}
+#kinesiologia .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  padding: 2px;
+}
+#kinesiologia .grid-container .grid-item {
+  display: flex;
+  justify-content: center;
+  color: rgb(201, 26, 26);
+  padding: 1px;
+  border-radius: 8px;
+  text-align: center;
+}
+#kinesiologia .grid-container .grid-item .btn-color-propio {
+  background-color: rgba(255, 229, 196, 0.664);
+  border-color: rgba(112, 102, 89, 0.274);
+  color: rgb(43, 150, 158);
 }
 
 .medicina_carrusel .imagen-container {
@@ -193,28 +208,74 @@ main .formulario {
 .medicina_carrusel .carousel-control-next .carousel-control-next-icon {
   background-color: rgb(37, 35, 35);
 }
-
-.titulo_psicologia {
+.medicina_carrusel .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  padding: 2px;
+}
+.medicina_carrusel .grid-container .grid-item {
+  display: flex;
+  justify-content: center;
+  color: rgb(201, 26, 26);
+  padding: 1px;
+  border-radius: 8px;
+  text-align: center;
+}
+.medicina_carrusel .grid-container .grid-item .btn-color-propio {
+  background-color: rgba(255, 229, 196, 0.664);
+  border-color: rgba(112, 102, 89, 0.274);
   color: rgb(43, 150, 158);
 }
 
-.psicologa_laura {
+.psicologia_main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 5px;
+}
+.psicologia_main .titulo_psicologia {
+  display: flex;
+}
+.psicologia_main .psicologa_laura {
   display: flex;
   align-items: center;
   text-align: center;
 }
-.psicologa_laura img {
+.psicologia_main .psicologa_laura img {
   border-radius: 30%;
   max-width: 200px;
   height: auto;
-  margin-right: 20px;
+  margin: 3px;
 }
-.psicologa_laura h2 {
+.psicologia_main .psicologa_laura h2 {
   padding: 10px;
   font-weight: normal;
   font-size: 1rem;
+  margin: 3px;
+}
+.psicologia_main .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  padding: 2px;
+}
+.psicologia_main .grid-container .grid-item {
+  display: flex;
+  justify-content: center;
+  color: rgb(201, 26, 26);
+  padding: 1px;
+  border-radius: 8px;
+  text-align: center;
+}
+.psicologia_main .grid-container .grid-item .btn-color-propio {
+  background-color: rgba(255, 229, 196, 0.664);
+  border-color: rgba(112, 102, 89, 0.274);
+  color: rgb(43, 150, 158);
 }
 
+main .servicios_index {
+  display: flex;
+}
 main .profesion {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -222,13 +283,11 @@ main .profesion {
   column-gap: 15px;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 main .profesion .cards {
   justify-content: center;
   align-items: center;
-}
-main .profesion .cards .mini_titulos {
-  color: rgb(43, 150, 158);
 }
 main .profesion .cards .cards_inicio {
   justify-content: center;
@@ -292,6 +351,11 @@ main .profesion .cards .descripciones_especialidad {
   .header-container .logo {
     order: 1;
     margin-top: 10px;
+  }
+  .contacto_pagina {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
   }
 }
 

@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neorehabilitación - Inicio </title>
     <!-- <link rel="stylesheet" href="./css/styless.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <meta name="description" content="Centro de rehabilitación multidisciplinario: ofrecemos tratamientos integrales y personalizados para una recuperación efectiva. Nuestro equipo de especialistas está dedicado a mejorar tu calidad de vida y bienestar.">
     <meta name="keywords" content="centro de rehabilitación, rehabilitación multidisciplinaria, tratamientos integrales, recuperación efectiva, especialistas en rehabilitación, calidad de vida, bienestar, terapia física, terapia ocupacional, fisioterapia, atención personalizada, medicina general, medicina, angol">
+    
 </head>
 <body>
 
@@ -25,9 +27,9 @@
                     <li class="submenu">
                         <a href="#">Servicios</a>
                         <ul class="submenu-items">
-                            <li><a href="./pages/psicologia.html">Psicologia</a></li>
+                            <li><a href="./pages/psicologia.html">Psicología</a></li>
                             <li><a href="./pages/medicina.html">Medicina</a></li>
-                            <li><a href="./pages/kinesiologia.html">Kinesiologia</a></li>
+                            <li><a href="./pages/kinesiologia.html">Kinesiología</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -38,27 +40,52 @@
 
 
     <main>
-        <h1>Neorehabilitacion</h1>
-        <h2>Cuenta con servicios de:</h2>
+        <h1 class="neo_titulo">Neorehabilitación</h1>
+        <h2 class="servicios_index">Cuenta con servicios de:</h2>
         <div class="profesion">
             <div class="cards">
-                <h2 class="mini_titulos">Kinesiologia</h2>
+                <h2 class="mini_titulos">Kinesiología</h2>
                 <img src="./assets/img/kine_inicio.jpg" alt="Imagen de kinesiología" class="cards_inicio">
-                <h3 class="descripciones_especialidad">La kinesiología en nuestro centro de rehabilitación se dedica a <strong>mejorar la movilidad</strong> y <strong>aliviar el dolor</strong> mediante tratamientos personalizados. Nuestros kinesiólogos especializados utilizan técnicas avanzadas para ayudarte a recuperar tu bienestar y calidad de vida.</h3>
+                <p class="descripciones_especialidad">La kinesiología en nuestro centro de rehabilitación se dedica a <strong>mejorar la movilidad</strong> y <strong>aliviar el dolor</strong> mediante tratamientos personalizados. Nuestros kinesiólogos especializados utilizan técnicas avanzadas para ayudarte a recuperar tu bienestar y calidad de vida.</p>
+                
             </div>
     
             <div class="cards">
                 <h2 class="mini_titulos">Medicina</h2>
                 <img src="./assets/img/doctor_inicio.jpg" alt="Imagen de medicina general" class="cards_inicio">
-                <h3 class="descripciones_especialidad">En nuestra unidad de medicina general, nos comprometemos a brindar una atención integral y personalizada para pacientes de todas las edades. Con un <strong>enfoque</strong> en la <strong>prevención</strong>, <strong>diagnóstico</strong> y <strong>tratamiento</strong> de una amplia gama de condiciones médicas, nuestro equipo de médicos generales ofrece cuidados compasivos y eficaces, centrados en el bienestar y la salud a largo plazo de nuestros pacientes</h3>
+                <p class="descripciones_especialidad">En nuestra unidad de medicina general, nos comprometemos a brindar una atención integral y personalizada para pacientes de todas las edades. Con un <strong>enfoque</strong> en la <strong>prevención</strong>, <strong>diagnóstico</strong> y <strong>tratamiento</strong> de una amplia gama de condiciones médicas, nuestro equipo de médicos generales ofrece cuidados compasivos y eficaces, centrados en el bienestar y la salud a largo plazo de nuestros pacientes </p>
             </div>
-    
+
             <div class="cards">
-                <h2 class="mini_titulos">Psicologia</h2>
+                <h2 class="mini_titulos">Psicología</h2>
                 <img src="./assets/img/psicologia_inicio.webp" alt="Imagen de psicología" class="cards_inicio">
-                <h3 class="descripciones_especialidad">Nuestro equipo de psicólogos altamente capacitados brinda un enfoque compasivo y personalizado para abordar una <strong>variedad de desafíos emocionales</strong>, <strong>cognitivos</strong> y <strong>conductuales</strong>. Nos esforzamos por crear un entorno seguro y de apoyo donde cada individuo pueda explorar su bienestar mental y alcanzar su máximo potencial.</h3>
+                <p class="descripciones_especialidad">Nuestro equipo de psicólogos altamente capacitados brinda un enfoque compasivo y personalizado para abordar una <strong>variedad de desafíos emocionales</strong>, <strong>cognitivos</strong> y <strong>conductuales</strong>. Nos esforzamos por crear un entorno seguro y de apoyo donde cada individuo pueda explorar su bienestar mental y alcanzar su máximo potencial.</p>
             </div>
         </div>
+
+        <!-- About 1 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5">
+    <div class="container">
+        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+            <div class="col-12 col-lg-6 col-xl-5">
+                <img class="img-fluid rounded" loading="lazy" src="./assets/img/Banner_quienes_somos.jpg" alt="quienes somos, about us, neorehabilitacion">
+            </div>
+            <div class="col-12 col-lg-6 col-xl-7">
+                <div class="row justify-content-xl-center">
+                    <div class="col-12 col-xl-11">
+                        <h2 class="mb-3">Quienes somos?</h2>
+                        <p class="lead fs-4 text-secondary mb-3">En nuestro Centro de Rehabilitación Integral, creemos firmemente en la capacidad humana para superar adversidades y alcanzar su máximo potencial. Estamos comprometidos a proporcionar un enfoque holístico que integra la kinesiología, la psicología y la medicina para atender de manera integral las necesidades de cada uno de nuestros pacientes.</p>
+                        <p class="mb-5">Nunca subestimes el poder de la esperanza y la perseverancia. Tu esfuerzo, combinado con nuestro apoyo especializado, puede lograr lo extraordinario. Enfrentemos juntos los desafíos, celebremos cada logro y avancemos con la convicción de que un futuro brillante y saludable está a tu alcance.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
     </main>
     
 

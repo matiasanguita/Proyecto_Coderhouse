@@ -14,6 +14,7 @@ footer
         grid-template-columns: 1fr 1fr;
         justify-content: flex-end;
         align-items: center;
+        color: #ffffff;
         .footer-info 
         {
         }
@@ -29,8 +30,9 @@ footer
                     display: inline-block;
                     a 
                     {
-                        color: #333;
+                        color: #ffffff;
                         text-decoration: none;
+                        margin: 3px;
                     }
                     &:last-child 
                     {

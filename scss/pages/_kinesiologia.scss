@@ -2,9 +2,8 @@
 {
     h1 
     {
-        align-items: center;
-        justify-content: center;
-        color: rgb(43, 150, 158);
+        @extend .centrador_texto;
+        @extend .color_letras;
     }
     .fotos_kines
     {
@@ -16,12 +15,7 @@
         {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            border: 2px solid aqua;
-            margin: 5px;
-            padding: 10px;
+            @extend .bordes_cards;
             .foto_cami
             {
                 align-items: center;
@@ -37,12 +31,7 @@
         {
             display: flex;
             flex-direction: row-reverse;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            border: 2px solid aqua;
-            margin: 5px;
-            padding: 10px;
+            @extend .bordes_cards;
             .foto_maira 
             {
                 
@@ -52,6 +41,28 @@
                 padding: 5px;
             }
             
+        }
+    }
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px;
+        padding: 2px; 
+        .grid-item 
+        {
+            display: flex;
+            justify-content: center;
+            color: rgb(201, 26, 26);
+            padding: 1px;
+            border-radius: 8px;
+            text-align: center;
+            .btn-color-propio
+            {
+                background-color: rgba(255, 229, 196, 0.664) ;
+                border-color: rgb(112, 102, 89, 0.274);
+                color: rgb(43, 150, 158);
+            }
         }
     }
 }
