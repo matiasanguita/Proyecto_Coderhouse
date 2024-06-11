@@ -16,12 +16,14 @@ html {
   font-weight: 400;
 }
 .centrador_texto, main .servicios_index, main .neo_titulo, #kinesiologia h1 {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .color_letras, main .profesion .cards .mini_titulos, .psicologia_main .titulo_psicologia, #kinesiologia h1 {
   color: rgb(43, 150, 158);
+  height: normal;
 }
 
 .bordes_cards, #kinesiologia .fotos_kines .card_maira, #kinesiologia .fotos_kines .card_cami {
@@ -221,6 +223,7 @@ footer .contenedor-footer .footer-social ul li:last-child {
   padding: 1px;
   border-radius: 8px;
   text-align: center;
+  margin: 10px;
 }
 .medicina_carrusel .grid-container .grid-item .btn-color-propio {
   background-color: rgba(255, 229, 196, 0.664);

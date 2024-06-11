@@ -1,5 +1,6 @@
 .centrador_texto 
 {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -7,6 +8,7 @@
 .color_letras
 {
     color: rgb(43, 150, 158);
+    height: normal;
 }
 
 .bordes_cards 
